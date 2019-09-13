@@ -12,9 +12,11 @@ const promise = new Promise((resolve, reject) => resolvePromise ? resolve(1) : r
 
 ```
 promise.then(result => {
-    console.log("result: ", result); //"result: 1" in console if resolvePromise = true
+    console.log("result: ", result); 
+    //"result: 1" in console if resolvePromise = true
 }).catch(error => {
-    console.log("error: ", error); //"error: 2" in console if resolvePromise = false
+    console.log("error: ", error); 
+    //"error: 2" in console if resolvePromise = false
 })
 ```
 
@@ -24,9 +26,11 @@ promise.then(result => {
 async function execute() {
     try {
         const result = await promise
-        console.log("result: ", result); //"result: 1" in console if resolvePromise = true
+        console.log("result: ", result); 
+        //"result: 1" in console if resolvePromise = true
     } catch (error) {
-        console.log("error: ", error); //"error: 2" in console if resolvePromise = false
+        console.log("error: ", error); 
+        //"error: 2" in console if resolvePromise = false
     }
 }
 execute();
@@ -38,9 +42,11 @@ execute();
 ;(async () => { //";" to js understand this shit
     try {
         const result = await promise
-        console.log("result: ", result); //"result: 1" in console if resolvePromise = true
+        console.log("result: ", result); 
+        //"result: 1" in console if resolvePromise = true
     } catch (error) {
-        console.log("error: ", error); //"error: 2" in console if resolvePromise = false
+        console.log("error: ", error); 
+        //"error: 2" in console if resolvePromise = false
     }
 })() //"()" to self-call the function
 ```
